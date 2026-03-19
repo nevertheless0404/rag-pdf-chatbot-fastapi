@@ -45,19 +45,26 @@ PDF 문서를 업로드한 뒤 질문하면 관련 내용을 검색하여 답변
 uvicorn app.main:app --reload
 ```
 
-2. Ollama 실행
-   ollama run llama3
-
-3. 서버 실행
-   uvicorn app.main:app --reload
-   Swagger 테스트
-   http://127.0.0.1:8000/docs
+#### Ollama 실행
+```bash
+ollama run llama3
+```
+#### 서버 실행
+```bash
+uvicorn app.main:app --reload
+```
+#### Swagger 테스트
+```bash
+http://127.0.0.1:8000/docs
+```
 
 POST /upload
+<img width="1007" height="980" alt="스크린샷 2026-03-19 오후 7 27 21" src="https://github.com/user-attachments/assets/8d393f40-f5f7-4f61-9272-f1807233cd31" />
 
-질문하기
-
+#### 질문하기
 GET /ask
+<img width="987" height="1016" alt="스크린샷 2026-03-19 오후 7 27 06" src="https://github.com/user-attachments/assets/93fa34a4-832a-4c96-b5f8-96cf30bbf16e" />
+
 
 ## 구현 포인트
 
