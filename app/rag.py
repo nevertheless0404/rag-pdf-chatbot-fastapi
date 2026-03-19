@@ -31,7 +31,7 @@ def ask_question(db, query):
     llm = Ollama(model="llama3")
 
     prompt = f"""
-문서 내용:
+문서:
 {context}
 
 질문:
